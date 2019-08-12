@@ -1,0 +1,123 @@
+/*img {
+ max-width: 100%;
+    height: auto;
+}*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.poembody{
+	color: white;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	z-index: 20;
+	padding-left: 50vw;
+	/*color: black;*/
+}
+.poembody h1{
+	color: red
+}
+.poembody a{
+	color: gray
+} 
+.img{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	position: absolute;
+	z-index: 0;
+}
+.bubble{
+		width: 100%;
+	padding:170% 0 0;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	z-index: 20;
+
+}
+.nav {
+	margin-left: 60%;
+}
+.nav li {
+  width: 130px;
+  height: 70%;
+  list-style:none;
+  position: relative;
+}
+.nav li a {
+  height: 70%;
+  display: block;
+}
+li a i {
+  position: absolute;
+  bottom: 26px;
+  left: 20px;
+  width: 20px;
+  height:20px;
+  opacity: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 4px white;
+  display: block;
+}
+.nav li a.hover .i-1 {
+  animation: lightAni1 3s linear infinite;
+}
+.nav li a.hover .i-2 {
+  animation: lightAni2 3s 1s linear infinite;
+}
+.nav li a.hover .i-3 {
+  animation: lightAni1 3s 2s linear infinite;
+}
+.nav li a.hover .i-4 {
+  animation: lightAni1 3s 2.2s linear infinite;
+}
+.nav li a.hover .i-5 {
+  animation: lightAni3 3s 1.5s linear infinite;
+}
+.nav li a.hover .i-6 {
+  animation: lightAni2 3s .5s linear infinite;
+}
+.nav li a.hover .i-7 {
+  animation: lightAni1 3s .8s linear infinite;
+}
+@keyframes lightAni1 {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-120px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
+@keyframes lightAni2 {
+  0% {
+    opacity: 0.5;
+    transform: translate(0,0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-20px,-100px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-30px,-200px);
+  }
+}
+@keyframes lightAni3 {
+  0% {
+    opacity: 0.5;
+    transform: translate(0,0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(10px,-80px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(20px,-200px);
+  }
+}
